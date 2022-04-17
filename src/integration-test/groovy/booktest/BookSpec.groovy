@@ -11,10 +11,11 @@ import geb.spock.*
 
 import geb.Module
 import geb.Page
-
+import org.springframework.boot.test.context.SpringBootTest
 
 
 @Integration
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class BookSpec extends GebSpec {
 
     def setup() {
@@ -28,6 +29,8 @@ class BookSpec extends GebSpec {
         when:"The home page is visited"
         go "/"
 
+
+        Thread.sleep(10000)
 
         then:"The title is correct"
 

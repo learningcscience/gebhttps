@@ -9,7 +9,6 @@ environments {
 
         driver = {
 
-
 //            System.setProperty('webdriver.chrome.driver', 'C:\\webdrivers\\chromedriver.exe')
            new ChromeDriver()
 
@@ -30,3 +29,5 @@ environments {
         driver = { new FirefoxDriver() }
     }
 }
+
+
